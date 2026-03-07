@@ -2,7 +2,6 @@
 <project version="4">
   <component name="Black">
     <option name="enabledOnReformat" value="true" />
-    <option name="enabledOnSave" value="true" />
     <option name="pathToExecutable" value="/usr/bin/black" />
     <option name="sdkName" value="uv (ege_route)" />
   </component>
