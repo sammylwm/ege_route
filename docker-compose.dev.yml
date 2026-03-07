@@ -1,0 +1,13 @@
+services:
+  db:
+    image: postgres:17
+    restart: unless-stopped
+    ports:
+      - "5432:5432"
+    env_file:
+      - app/settings/dev.env
+    volumes:
+      - EgeRouteDb:/var/lib/postgresql/data
+
+volumes:
+  EgeRouteDb:
