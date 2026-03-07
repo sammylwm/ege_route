@@ -9,8 +9,7 @@ def get_env_file() -> bool:
 
 
 class ConfigBase(BaseSettings):
-    env = "settings/"
-    env += ".env" if get_env_file() else "dev.env"
+    env = ".env" if get_env_file() else "dev.env"
     model_config = SettingsConfigDict(
         env_file=env, env_file_encoding="utf-8", extra="ignore"
     )
